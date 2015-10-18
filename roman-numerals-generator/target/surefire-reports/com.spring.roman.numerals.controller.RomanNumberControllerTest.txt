@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.spring.roman.numerals.controller.RomanNumberControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.2 sec <<< FAILURE! - in com.spring.roman.numerals.controller.RomanNumberControllerTest
+roman_form_should_be_loaded(com.spring.roman.numerals.controller.RomanNumberControllerTest)  Time elapsed: 0.78 sec  <<< FAÝLURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:549)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
+	at com.spring.roman.numerals.controller.RomanNumberControllerTest.roman_form_should_be_loaded(RomanNumberControllerTest.java:44)
+
