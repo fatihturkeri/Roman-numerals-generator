@@ -22,7 +22,8 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <div id="result"  style="display: none"></div>
+                        <span>Result :</span>
+                         <div id="result"  style="display: none"></div>
                     </td>
                 </tr>
             </table>  
