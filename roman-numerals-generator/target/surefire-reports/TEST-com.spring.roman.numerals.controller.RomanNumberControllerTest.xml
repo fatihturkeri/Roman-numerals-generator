@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.spring.roman.numerals.controller.RomanNumberControllerTest" time="0.78" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
+    <property name="java.vm.version" value="25.25-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\fatih\roman-numerals-generator"/>
+    <property name="java.runtime.version" value="1.8.0_25-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\fatih\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0.1\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.0.1\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1254"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files (x86)\Skype\Phone\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\fatih"/>
+    <property name="user.timezone" value="Europe/Athens"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1254"/>
+    <property name="user.name" value="fatih"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.0.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.1\java\maven-nblib\netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="tr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.0.1\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="roman_form_should_be_loaded" classname="com.spring.roman.numerals.controller.RomanNumberControllerTest" time="0.78">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$5.match(StatusResultMatchers.java:549)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:141)
+	at com.spring.roman.numerals.controller.RomanNumberControllerTest.roman_form_should_be_loaded(RomanNumberControllerTest.java:44)
+]]></failure>
+    <system-out><![CDATA[17:30:19.116 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.spring.roman.numerals.controller.RomanNumberControllerTest].
+17:30:19.176 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlWebContextLoader to process context configuration [ContextConfigurationAttributes@5442a311 declaringClass = 'com.spring.roman.numerals.controller.RomanNumberControllerTest', locations = '{classpath:*/test-config.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+17:30:19.186 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.186 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [class com.spring.roman.numerals.controller.RomanNumberControllerTest]: using defaults.
+17:30:19.196 [main] DEBUG o.s.test.context.TestContextManager - Could not instantiate default TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes available.
+17:30:19.196 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.196 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.196 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.196 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.206 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.206 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.spring.roman.numerals.controller.RomanNumberControllerTest]
+17:30:19.206 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlWebContextLoader to load context from [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader'].
+17:30:19.206 [main] DEBUG o.s.t.c.w.AbstractGenericWebContextLoader - Loading WebApplicationContext for merged context configuration [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader'].
+17:30:19.336 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:30:19.336 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:30:19.346 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:30:19.346 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:30:19.346 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+17:30:19.366 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\Users\fatih\roman-numerals-generator\target\test-classes]
+17:30:19.366 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\Users\fatih\roman-numerals-generator\target\test-classes] for files matching pattern [C:/Users/fatih/roman-numerals-generator/target/test-classes/*/test-config.xml]
+17:30:19.366 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\Users\fatih\roman-numerals-generator\target\test-classes\com] for files matching pattern [C:/Users/fatih/roman-numerals-generator/target/test-classes/*/test-config.xml]
+17:30:19.366 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath:*/test-config.xml] to resources []
+17:30:19.366 [main] DEBUG o.s.b.f.xml.XmlBeanDefinitionReader - Loaded 0 bean definitions from location pattern [classpath:*/test-config.xml]
+17:30:19.396 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@369f73a2: startup date [Sun Oct 18 17:30:19 EEST 2015]; root of context hierarchy
+17:30:19.396 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+17:30:19.406 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Bean factory for org.springframework.web.context.support.GenericWebApplicationContext@369f73a2: org.springframework.beans.factory.support.DefaultListableBeanFactory@11e21d0e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; root of factory hierarchy
+17:30:19.416 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@4d339552]
+17:30:19.416 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@6591f517]
+17:30:19.416 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@345965f2]
+17:30:19.416 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@279ad2e3]
+17:30:19.426 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:30:19.426 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:30:19.446 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+17:30:19.446 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:30:19.456 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:30:19.456 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+17:30:19.466 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+17:30:19.466 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7fc229ab]
+17:30:19.476 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@78dd667e]
+17:30:19.476 [main] DEBUG o.s.u.c.s.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1df82230]
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11e21d0e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+17:30:19.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+17:30:19.486 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@4c15e7fd]
+17:30:19.486 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+17:30:19.486 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+17:30:19.486 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+17:30:19.486 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+17:30:19.486 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+17:30:19.486 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+17:30:19.486 [main] DEBUG o.s.test.context.TestContext - Storing ApplicationContext for test class [class com.spring.roman.numerals.controller.RomanNumberControllerTest] in cache under key [[WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+17:30:19.486 [main] DEBUG o.s.t.c.w.ServletTestExecutionListener - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [TestContext@3c72f59f testClass = RomanNumberControllerTest, testInstance = com.spring.roman.numerals.controller.RomanNumberControllerTest@60dcc9fe, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+17:30:19.506 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[TestContext@3c72f59f testClass = RomanNumberControllerTest, testInstance = com.spring.roman.numerals.controller.RomanNumberControllerTest@60dcc9fe, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']]].
+17:30:19.506 [main] DEBUG o.s.test.context.TestContext - Retrieved ApplicationContext for test class [class com.spring.roman.numerals.controller.RomanNumberControllerTest] from cache with key [[WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+17:30:19.536 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'com.spring.roman.numerals.controller.RomanNumberControllerTest': AutowiredFieldElement for private org.springframework.web.context.WebApplicationContext com.spring.roman.numerals.controller.RomanNumberControllerTest.wac
+17:30:19.536 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.spring.roman.numerals.controller.RomanNumberControllerTest' to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@369f73a2'
+17:30:19.546 [main] DEBUG o.s.test.context.TestContext - Retrieved ApplicationContext for test class [class com.spring.roman.numerals.controller.RomanNumberControllerTest] from cache with key [[WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+17:30:19.546 [main] DEBUG o.s.t.c.w.ServletTestExecutionListener - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [TestContext@3c72f59f testClass = RomanNumberControllerTest, testInstance = com.spring.roman.numerals.controller.RomanNumberControllerTest@60dcc9fe, testMethod = roman_form_should_be_loaded@RomanNumberControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+17:30:19.576 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+17:30:19.576 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:30:19.576 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:30:19.576 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:30:19.576 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:30:19.576 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+17:30:19.576 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+17:30:19.576 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+17:30:19.576 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+17:30:19.576 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+17:30:19.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+17:30:19.586 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1725dc0f]
+17:30:19.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+17:30:19.596 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+17:30:19.596 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@39529185]
+17:30:19.596 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Looking for URL mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@369f73a2: startup date [Sun Oct 18 17:30:19 EEST 2015]; root of context hierarchy
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'environment': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'systemProperties': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'systemEnvironment': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'servletContext': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'contextParameters': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'contextAttributes': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping - Rejected bean name 'lifecycleProcessor': no URL paths identified
+17:30:19.616 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+17:30:19.626 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+17:30:19.626 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Looking for URL mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@369f73a2: startup date [Sun Oct 18 17:30:19 EEST 2015]; root of context hierarchy
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'environment': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'systemProperties': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'systemEnvironment': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'servletContext': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'contextParameters': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'contextAttributes': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.w.s.m.a.DefaultAnnotationHandlerMapping - Rejected bean name 'lifecycleProcessor': no URL paths identified
+17:30:19.636 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+17:30:19.636 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - No HandlerMappings found in servlet '': using default
+17:30:19.636 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+17:30:19.636 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+17:30:19.636 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+17:30:19.636 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+17:30:19.646 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+17:30:19.756 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter'
+17:30:19.756 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - No HandlerAdapters found in servlet '': using default
+17:30:19.776 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+17:30:19.786 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+17:30:19.786 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+17:30:19.796 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+17:30:19.796 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+17:30:19.796 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+17:30:19.796 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - No HandlerExceptionResolvers found in servlet '': using default
+17:30:19.796 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+17:30:19.806 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+17:30:19.806 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c7b252e]
+17:30:19.806 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver'
+17:30:19.906 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver'
+17:30:19.906 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - No ViewResolvers found in servlet '': using default
+17:30:19.906 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+17:30:19.916 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+17:30:19.916 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@51399530]
+17:30:19.916 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+17:30:19.916 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 340 ms
+17:30:19.916 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+17:30:19.956 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/mainPage]
+17:30:19.966 [main] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/mainPage] in DispatcherServlet with name ''
+17:30:19.966 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+17:30:19.966 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [[TestContext@3c72f59f testClass = RomanNumberControllerTest, testInstance = com.spring.roman.numerals.controller.RomanNumberControllerTest@60dcc9fe, testMethod = roman_form_should_be_loaded@RomanNumberControllerTest, testException = java.lang.AssertionError: Status expected:<200> but was:<404>, mergedContextConfiguration = [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']]], class dirties context [false], class mode [null], method dirties context [false].
+17:30:19.966 [main] DEBUG o.s.t.c.w.ServletTestExecutionListener - Resetting RequestContextHolder for test context [TestContext@3c72f59f testClass = RomanNumberControllerTest, testInstance = com.spring.roman.numerals.controller.RomanNumberControllerTest@60dcc9fe, testMethod = roman_form_should_be_loaded@RomanNumberControllerTest, testException = java.lang.AssertionError: Status expected:<200> but was:<404>, mergedContextConfiguration = [WebMergedContextConfiguration@64bfbc86 testClass = RomanNumberControllerTest, locations = '{classpath:*/test-config.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader']].
+]]></system-out>
+  </testcase>
+</testsuite>
